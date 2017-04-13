@@ -22,3 +22,16 @@ div {
 #chars {
   background-color: transparent;
 }
+#start {
+    width: 150px;
+    height: 40px;
+    color: blueviolet;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+    margin-right: 40px;
+    font-size: 1.5em;
+}
+#start:hover {
+   color: brown;
+}
