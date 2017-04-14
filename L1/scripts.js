@@ -1,9 +1,9 @@
 var board = document.getElementById('board');
 var chars = "ABCDEFGH";
-function creatBoard() {
+function creatBoard(chess) {
 for (var i = 0; i < n; i++){ 
 		for (var j = 0; j < n; j++){
-        var div = document.createElement("div");    
+        var div = document.createElement('div');    
         board.appendChild(div);
         //Нумерация столбцов
            if (j == 0 && i <= 8){
@@ -17,19 +17,32 @@ for (var i = 0; i < n; i++){
         } 
         div.id = chars[j - 1] + (8 - i);        
         if ((i + j) % 2 == 0){
-        		div.className = 'black'; 
+        		div.className = 'black';
         } else {
         		div.className = 'white';
             }
         }
     }
+    var body = document.getElementById('body');
+    var button = document.createElement('button');
+    button.id = 'button';
+    button.innerHTML = 'Убрать доску';
+    body.appendChild(button);
+    this.button = button;
+    
+
+
+    
 }   
 var n = 9;
 var start = document.getElementById('start');
     start.onclick = function start(){
          creatBoard();
 }
-    var out = document.getElementById('board');
-        out.onclick = function out(){
+    function out(){ //должна убираться доска но не убирается.
+        creatBoard().call(this.button);
+        button.onclick = function outBoard(){
           location.reload();
-        }    
+        }
+    }
+    
