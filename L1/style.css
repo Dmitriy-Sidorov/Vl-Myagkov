@@ -24,7 +24,7 @@ div {
 }
 #start {
     width: 150px;
-    height: 40px;
+    height: 1000px;
     color: blueviolet;
     text-align: center;
     cursor: pointer;
@@ -34,4 +34,13 @@ div {
 }
 #start:hover {
    color: brown;
+}
+#button {
+    width: 150px;
+    height: 100px;
+    color: brown;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-left: 40px;
 }
