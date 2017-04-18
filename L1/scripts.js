@@ -1,7 +1,9 @@
 var boardElement = document.getElementById('board');
 var char = "ABCDEFGH";
 function ChessBoard(element) {
-  this.element = element;
+  this.addEventListener = function(eventName, eventHandler) {
+  element.addEventListener(eventName, eventHandler);
+}
   for (var i = 0; i < 9; i++) { 
 		for (var j = 0; j < 9; j++) {
       var div = document.createElement('div');
