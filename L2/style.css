@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.form {
+    width: 500px;
+    height: 550px;
+    background-color: bisque;
+    display: inline;
+    float: left;
+    margin: 0 auto;
+}
+.username {
+    width: 300px;
+    height: 70px;
+    text-align: center;
+}
+.password {
+    width: 300px;
+    height: 70px;
+    text-align: center;
+}
+.email {
+    width: 300px;
+    height: 70px;
+    text-align: center;
+}
+.gender {
+    width: 300px;
+    height: 70px;
+    text-align: center;
+}
+.credit_card {
+    width: 300px;
+    height: 70px;
+    text-align: center;
+}
+.bio {
+    width: 300px;
+    height: 70px;
+    text-align: center;
+}
+.button {
+    width: 70px;
+    height: 20px;
+}
