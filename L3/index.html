@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="main" action="">
+<form class="form" id="form">
+    <div class="phone">
+        <label class="lable" for="phone">Номер телефона:</label>
+        <input type="text" class="input" id="phone" placeholder="+7(965)-123-45-67">
+        <span id="phoneMessage"></span> 
+    </div>
+    <div class="email">
+        <label class="lable" for="email">E_mail:</label>
+        <input type="email" class="input" id="email" placeholder="submint@email.ru">
+        <span id="eMailMessage"></span> 
+    </div>
+    <div class="serial">
+        <label class="lable" for="serial">Серия паспорта:</label>
+        <input type="text" class="input" id="serial" placeholder="7512">
+        <span id="serialMessage"></span>
+ 
+    </div>
+    <div class="number">
+        <label class="lable" for="number">Номер паспорта:</label>
+        <input type="text" class="input" id="number" placeholder="123456">
+        <span id="numberMessage"></span>
+ 
+    </div>
+    
+    
+    <hr>
+    
+    <input type="submit" class="button" id="button" value="Отправить">
+    <span id="succeded"></span>
+
+    
+</form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
